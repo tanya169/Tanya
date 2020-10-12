@@ -74,3 +74,8 @@ h5 {
 .link:hover {
     background-color: deeppink;
 }
+
+li {
+    display: inline;
+    padding: 10px;
+}
