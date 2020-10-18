@@ -51,7 +51,7 @@ h5 {
     text-align: center;
 }
 
-#hi {
+#About {
     background: linear-gradient(#FFAB00 0%, #FFEA00 100%);
 }
 
@@ -71,11 +71,38 @@ h5 {
     font-family: 'Courgette', cursive;
 }
 
-.link:hover {
+.links:hover {
     background-color: deeppink;
 }
 
 li {
     display: inline;
     padding: 10px;
+}
+
+iframe {
+    display: inline;
+    margin: 10px;
+}
+
+a {
+    background-color: antiquewhite;
+    color: lightseagreen;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.button {
+    background-color: firebrick;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+body {
+    background-color: thistle;
 }
