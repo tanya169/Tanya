@@ -106,3 +106,23 @@ a {
 body {
     background-color: thistle;
 }
+
+img {
+    transition: transform .2s;
+    width: 200px;
+    border: 10px solid #90caf9;
+    border-bottom-color: lightcoral;
+    border-left-color: lightgoldenrodyellow;
+    border-top-color: aliceblue;
+    border-radius: 50%;
+    width: 100px;
+    text-align: center;
+}
+
+#picture1{
+    margin: auto; display: block;
+}
+#picture1:hover{
+    transform: scale(0.9);
+    margin: auto; display: block;
+}
