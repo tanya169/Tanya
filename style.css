@@ -1,6 +1,6 @@
 #bio {
     text-align: center;
-    background: linear-gradient(#f06292 0%, #b39ddb 100%);
+    background: linear-gradient(#4FC3F7, #FFFF8D, #FFA000, #E91E63);
     background-repeat: no-repeat;
 }
 
@@ -86,7 +86,7 @@ iframe {
 }
 
 a {
-    background-color: antiquewhite;
+    background-color: lavender;
     color: lightseagreen;
     font-size: 20px;
     font-style: oblique;
@@ -119,10 +119,30 @@ img {
     text-align: center;
 }
 
-#picture1{
-    margin: auto; display: block;
+#picture1 {
+    margin: auto;
+    display: block;
 }
-#picture1:hover{
+
+#picture1:hover {
     transform: scale(0.9);
-    margin: auto; display: block;
+    margin: auto;
+    display: block;
+}
+
+#My_favourite_books {
+    background: linear-gradient(#f06292 0%, #b39ddb 100%);
+
+}
+
+#My_work {
+    background: linear-gradient(#D81B60 0%, #1A237E 100%);
+}
+
+#My_Inspiration {
+    background: linear-gradient(#4FC3F7 0%, #1A237E 100%);
+}
+
+#Contact {
+    background: linear-gradient(#4FC3F7, #1A237E, #f06292, #b39ddb);
 }
