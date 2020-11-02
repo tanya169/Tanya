@@ -1,34 +1,68 @@
-#app {
-    width: 100%;
-    height: 800px;
-    background-color: aliceblue;
-}
-
-.container {
+body {
     text-align: center;
 }
 
-#myCarousel {
-    background-color: red;
+#welcome {
+    color: #FFFFFF;
+    bottom: 0;
+    background: linear-gradient(#4FC3F7, #FFFF8D, #FFA000, #E91E63);
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
 }
 
-#myCarousel img {
-    height: 300px;
-    margin-top: 35px;
+#videos {
+    color: #FFFFFF;
+    bottom: 0;
+    background: linear-gradient(#f06292 0%, #b39ddb 100%);
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
 }
 
-.carousel-inner p {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    color: white;
-    font-size: 20px;
+#bio {
+    font-family: 'Cinzel Decorative', cursive;
+    padding: 50px;
+    text-align: center;
 }
 
-#myCarouse2 {
-    background-color: #b5d0d4;
+h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 300;
 }
 
-#myCarouse2 img {
-    height: 300px;
-    margin-top: 35px;
+.line {
+    height: 6px;
+    background-color: #000;
+    width: 70px;
+    margin: 8px auto;
+}
+
+#contact iframe {
+    width: 100%;
+}
+
+.contact_1 h3 {
+    display: inline;
+}
+
+.contact_1 a {
+    text-shadow: none;
+}
+
+#videos iframe {
+    width: 80%;
+}
+
+.my_nav_bar {
+    position: sticky;
+    top: 0;
+    z-index: 99999
+}
+
+input {
+    background: grey;
 }

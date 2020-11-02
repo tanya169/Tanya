@@ -2,64 +2,88 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>School website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <section id="app">
-            <h1>Apps</h1>
-            <div class="line"></div> <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/AmAIOlod-80aGvVFcBdbfjebPGUlVaYjI8ECZcJtZks/embed"></iframe> <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/U9AQsuLnTixFr5caYUBM9qmkuaPCvmuWblFMcUPrC14/embed"></iframe>
-        </section>
-        <h2>Click On The Games To Explore</h2>
-        <h5>This games are bulid in game lab, click on the game to play</h5>
-        <div id="myCarousel" class="carousel slide">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <center> <a href="#" target="_blank"> <img src="Winne_Pooh.png" class="img-responsive"> </a>
-                        <div class="carousel-content">
-                            <p>Winne_Pooh</p>
-                        </div>
-                    </center>
-                </div>
-                <div class="item">
-                    <center>
-                        <a href="#" target="_blank"> <img src="Car_game.png" class="img-responsive"> </a>
-                        <div class="carousel-content">
-                            <p>Car_game</p>
-                        </div>
-                    </center>
-                </div>
-            </div> <!-- Left and right controls --> <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+    <nav class="navbar-inverse my_nav_bar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">St. Xavier’s School</a>
         </div>
-        <h2>Click On The Play Store Apps To Explore</h2>
-        <h5>This games are bulid in play lab, click on the app to view</h5>
-        <div id="myCarouse2" class="carousel slide">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <center> <a href="#" target="_blank"> <img src="chat_app.png" class="img-responsive"> </a>
-                        <div class="carousel-content">
-                            <p>Chat app</p>
-                        </div>
-                    </center>
-                </div>
-                <div class="item">
-                    <center> <a href="#" target="_blank"> <img src="be_fit_img.png" class="img-responsive"> </a>
-                        <div class="carousel-content">
-                            <p>Be Fit Not Fat</p>
-                        </div>
-                    </center>
-                </div>
-            </div> <!-- Left and right controls --> <a class="left carousel-control" href="#myCarouse2" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#myCarouse2" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#campus">Campus life</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#new">What’s New</a></li>
+                <li><a href="#alumni">Alumni</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
         </div>
-    </div>
+    </nav>
+    <section id="welcome">
+        <img src="https://i.ytimg.com/vi/9Frow8HMh74/hqdefault.jpg" class="profile img-circle">
+        <h1>
+            <span id="name">St. Xavier’s School</span>
+        </h1>
+    </section>
+    <section id="bio">
+        <h1>Hi!</h1>
+        <div class="line"></div>
+        <p>St. Xavier's High School, Fort, is a private Catholic an English medium school for boys run by the Society of Jesus in Fort, Mumbai, India.
+            <br>
+            St. Xavier's follows the SSC board which is the state board of the Government of Maharashtra. It runs classes from standard one to standard ten. The primary (standard one to four) and secondary school occupy different buildings. A class has four sections (A to D) with about fifty students per section.
+            <br>
+            All students of the secondary school belong to one of four houses - Claver (blue), Gonzaga (yellow), Britto (red), Berchmans (green). These were earlier known as Ashoka (blue), Tilak (yellow), Nehru (red), and Tagore (green). Each house has an elected House Captain from standard ten and a Vice-Captain from standard nine. Additionally, a School Captain and Vice-Captain are elected from standard ten. There is a sports captain and a sports vice captain also. These student representatives maintain student discipline and lead student and ceremonial activities.
+        </p>
+    </section>
+    <section id="videos">
+        <h1>Videos</h1>
+        <div class="announcement">
+            <marquee id="marqueeStyle" onmouseover="this.stop();" onmouseout="this.start();"> *** Feel free to ask queries on school@gmail.com *** </marquee>
+        </div> <iframe width="1280" height="720" src="https://www.youtube.com/embed/9Frow8HMh74" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contact">
+                <h2 class="text-capitalize">Contact Us</h2>
+            </div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.7103788762993!2d72.82808831538311!3d18.944209461023597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7a115555555%3A0x7fa7740275f81939!2sSt.%20Xavier&#39;s%20High%20School!5e0!3m2!1sen!2sin!4v1604299076102!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div id="details">
+                <img src="https://stxaviersfort.org/wp-content/uploads/2018/05/Sunny.jpg" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                <h3>Principal Name: </h3>
+                <h4>Mrs. Sharmila Sunny</h4>
+                <div class="contact_1">
+                    <a href="mailto:school@gmail.com?Subject=Hi">
+                        <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;school@gmail.com</h5>
+                    </a>
+                    <a href="#">
+                        <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;schoolId</h5>
+                    </a>
+                    <a href="#">
+                        <h5><i class="fa fa-phone-square"></i>&nbsp;&nbsp;022 2262 1113</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
