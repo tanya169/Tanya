@@ -124,3 +124,7 @@ travel_mainDiv img {
 #achievements {
     background: linear-gradient(#4FC3F7, #E91E63);
 }
+
+#new {
+    background-color: peachpuff;
+}
