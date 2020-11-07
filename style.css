@@ -128,3 +128,36 @@ travel_mainDiv img {
 #new {
     background-color: peachpuff;
 }
+
+#footer {
+    height: 20px;
+    background-color: white;
+}
+
+.alumni {
+    cursor: pointer;
+}
+
+.alumni hr {
+    margin-bottom: 10px;
+}
+
+.modal-content {
+    margin-top: 100px;
+}
+
+.img_modal {
+    display: inline-block;
+}
+
+.p_modal {
+    margin-top: 10px;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+#alumni {
+    background-color: lavender;
+}
