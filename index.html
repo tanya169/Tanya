@@ -1,28 +1,42 @@
 <html>
 
 <head>
-    <title>Project 77</title>
+    <title>My Family Book</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <h1> Project on console</h1>
-    <p>Write about visual studio and how to set it up</p>
-    <p>Write about console screen. And why it is used. And how to open console screen and how to print anything on console. </p>
-    <script>
-        console.log("My first console project");
-        var first_name = "Tanya";
-        var last_name = "Alagar";
-        var full_name = first_name.concat(last_name);
-        console.log(full_name);
-        var number_one = "20";
-        console.log(number_one);
-        var number_two = "4";
-        console.log(number_two);
-        console.log(+number_one + + number_two);
-        console.log(number_one - number_two);
-        console.log(number_one * number_two);
-        console.log(number_one / number_two);
-    </script>
+    <p id="firstp">My Family Book</p>
+    <img id="album" src="https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg">
+    <p id="names"> </p>
+    <div>
+        <button type="button" onclick="nextslide()"> Next </button>
+    </div>
 </body>
+<script>
+    var names = ["", "Alagar Perumal Kumarasamy (Father)", "Kavitha Alagar (Mother)",
+        "Tanya Alagar (Me)", "R.Kumarasamy (Grandfather)", "Sathiyavathi Kumarasamy (Grandmother)",
+        "Vimal Babu Mani (Uncle)", "Ramya Vimal (Aunt)", "Sahana Vimal (Cousin)", "Ashwath Vimal (Cousin)"
+    ];
+    var images = [
+        "https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg",
+        "https://i.pinimg.com/originals/92/4b/b2/924bb296a2bd1261d8c58a970fd14720.png",
+        "https://www.clipartkey.com/mpngs/m/35-357931_thumb-image-clipart-mum.png",
+        "https://p.jing.fm/clipimg/small/234-2349646_say-hello-girl-clipart-cute-clipart-drawing-for.png",
+        "https://webstockreview.net/images/grandfather-clipart-7.jpg",
+        "https://image.shutterstock.com/image-illustration/cartoon-old-woman-cane-260nw-1376524529.jpg",
+        "https://assets.puzzlefactory.pl/puzzle/266/767/original.jpg",
+        "https://us.123rf.com/450wm/kinokotagawa/kinokotagawa1803/kinokotagawa180300325/97317259-stock-vector-a-middle-aged-housewife-wearing-an-apron-is-informed.jpg?ver=6",
+        "https://hdclipartall.com/images/girl-clipart-girl-clipart-art-girl-girly-girls-girls-clips-girl-stuff-drama-album-clip-art-children-costumes-265x512.jpg",
+        "https://lh3.googleusercontent.com/proxy/3GMUSrKII5NAfSV5yAm3WZs4AYlr3eykt0tS7dogzGj2o3Dx7Peb3dL4JlBM7jx75uuzC80eXwmELvuqy-BSM0Jf"
+    ];
+    var i = 0;
+
+    function nextslide() {
+        document.getElementById("names").innerHTML = names[i];
+        document.getElementById("album").src = images[i];
+        i++;
+    }
+</script>
 
 </html>
