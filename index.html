@@ -1,42 +1,57 @@
 <html>
 
 <head>
-    <title>My Family Book</title>
+    <title>Project 80</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <p id="firstp">My Family Book</p>
-    <img id="album" src="https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg">
-    <p id="names"> </p>
-    <div>
-        <button type="button" onclick="nextslide()"> Next </button>
-    </div>
+    <h1>Make paragraphs from input boxes using join function</h1>
+    <span id="para1">
+    <span>1. </span>
+    <input type="text" id="para1_input_box_1" placeholder="Input box 1">
+    <br><br>
+    <span>2. </span>
+    <input type="text" id="para1_input_box_2" placeholder="Input box 2">
+    <br><br>
+    <span>3. </span>
+    <input type="text" id="para1_input_box_3" placeholder="Input box 3">
+    <br><br>
+    <span>4. </span>
+    <input type="text" id="para1_input_box_4" placeholder="Input box 4">
+    <br><br>
+    <span>5. </span>
+    <input type="text" id="para1_input_box_5" placeholder="Input box 5">
+    <br><br>
+    <span>6. </span>
+    <input type="text" id="para1_input_box_6" placeholder="Input box 6">
+    <br><br>
+    <button onclick="getParagraph1()">Get paragraph 1</button>   
+</span>
+     <span id="para2">
+        <span>1. </span>
+        <input type="text" id="para2_input_box_1" placeholder="Input box 1">
+        <br><br>
+        <span>2. </span>
+        <input type="text" id="para2_input_box_2" placeholder="Input box 2">
+        <br><br>
+        <span>3. </span>
+        <input type="text" id="para2_input_box_3" placeholder="Input box 3">
+        <br><br>
+        <span>4. </span>
+        <input type="text" id="para2_input_box_4" placeholder="Input box 4">
+        <br><br>
+        <span>5. </span>
+        <input type="text" id="para2_input_box_5" placeholder="Input box 5">
+        <br><br>
+        <span>6. </span>
+        <input type="text" id="para2_input_box_6" placeholder="Input box 6">
+        <br><br>
+        <button onclick="getParagraph2()">Get paragraph 2</button>        
+</span>
+          
 </body>
-<script>
-    var names = ["", "Alagar Perumal Kumarasamy (Father)", "Kavitha Alagar (Mother)",
-        "Tanya Alagar (Me)", "R.Kumarasamy (Grandfather)", "Sathiyavathi Kumarasamy (Grandmother)",
-        "Vimal Babu Mani (Uncle)", "Ramya Vimal (Aunt)", "Sahana Vimal (Cousin)", "Ashwath Vimal (Cousin)"
-    ];
-    var images = [
-        "https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg",
-        "https://i.pinimg.com/originals/92/4b/b2/924bb296a2bd1261d8c58a970fd14720.png",
-        "https://www.clipartkey.com/mpngs/m/35-357931_thumb-image-clipart-mum.png",
-        "https://p.jing.fm/clipimg/small/234-2349646_say-hello-girl-clipart-cute-clipart-drawing-for.png",
-        "https://webstockreview.net/images/grandfather-clipart-7.jpg",
-        "https://image.shutterstock.com/image-illustration/cartoon-old-woman-cane-260nw-1376524529.jpg",
-        "https://assets.puzzlefactory.pl/puzzle/266/767/original.jpg",
-        "https://us.123rf.com/450wm/kinokotagawa/kinokotagawa1803/kinokotagawa180300325/97317259-stock-vector-a-middle-aged-housewife-wearing-an-apron-is-informed.jpg?ver=6",
-        "https://hdclipartall.com/images/girl-clipart-girl-clipart-art-girl-girly-girls-girls-clips-girl-stuff-drama-album-clip-art-children-costumes-265x512.jpg",
-        "https://lh3.googleusercontent.com/proxy/3GMUSrKII5NAfSV5yAm3WZs4AYlr3eykt0tS7dogzGj2o3Dx7Peb3dL4JlBM7jx75uuzC80eXwmELvuqy-BSM0Jf"
-    ];
-    var i = 0;
-
-    function nextslide() {
-        document.getElementById("names").innerHTML = names[i];
-        document.getElementById("album").src = images[i];
-        i++;
-    }
-</script>
-
-</html>
+<div id="showParagraph1"></div>
+        <div id="showParagraph2"></div>      
+    </html>

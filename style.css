@@ -1,24 +1,26 @@
-body {
+h1{
     text-align: center;
-    background-color: #17c9e9;
+    background-color: pink;
+    color: rgb(5, 79, 236);
 }
-
-#firstp {
-    word-spacing: 10px;
-    font-variant: small-caps;
-    text-align: center;
-    font-size: 80px;
+body{
+    background-color: lavender;
 }
-
-#names {
-    font-size: 50px;
-    text-align: center;
+#para1{
+    float: left;
+    margin: 200;
 }
-
-#album {
-    text-align: center;
-    border-style: solid;
-    border-color: #17c9e9 border: 1px
-    border-radius: 80px;
-    padding : 5px;
-    width : 240px;
+#para2{
+    float: right;
+    margin: 200;
+}
+input{
+ background-color: coral;
+ color: palegoldenrod;
+}
+#showParagraph1{
+  margin: 328;  
+}
+#showParagraph2{ 
+    margin: 232;
+}
