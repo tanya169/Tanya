@@ -1,21 +1,28 @@
-function getParagraph1()
-{
-    var inputs = [];
-    for(var i = 1 ; i <=6 ; i++)
-    {
-        inputs.push(document.getElementById("para1_input_box_" + i).value);
-        inputs.join(". ");
+menu_list_array = ["Chicken Tandoori Pizza",
+    "Veg Supreme Pizza", "Paneer Tika Pizza", "Deluxe Veggie Pizza", "Veg Extravaganza Pizza"
+];
+
+function getmenu() {
+    var htmldata;
+    htmldata = "<ol class='menulist'>"
+    menu_list_array.sort();
+    for (var i = 0; i < menu_list_array.length; i++) {
+        htmldata = htmldata + '<li>' + menu_list_array[i] + '</li>'
     }
-    document.getElementById("showParagraph1").innerHTML = inputs.join(". ");   
-}
-function getParagraph2()
-{
-    var inputs = [];
-    for(var i = 1 ; i <=6 ; i++)
-    {
-        inputs.push(document.getElementById("para2_input_box_" + i).value);
-        inputs.join(". ");
-    }
-    document.getElementById("showParagraph2").innerHTML = inputs.join(". ");  
+    htmldata = htmldata + "</ol>"
+    document.getElementById("display_menu").innerHTML = htmldata;
 }
 
+function add_item(){
+    var htmldata;
+    var item=document.getElementById("add_item").value;
+    menu_list_array.push(item);
+    menu_list_array.sort();
+    htmldata="<section class='cards'>"
+    for (var i = 0; i < menu_list_array.length; i++) {
+
+        htmldata= htmldata+ '<div class="card">' + '<img src="images/pizzaImg.png"/>' + menu_list_array[i] + '</div>'
+    }
+    htmldata= htmldata+ "</section>"
+    document.getElementById("display_addedmenu").innerHTML = htmldata;
+}
