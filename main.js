@@ -21,7 +21,7 @@ function add_item(){
     htmldata="<section class='cards'>"
     for (var i = 0; i < menu_list_array.length; i++) {
 
-        htmldata= htmldata+ '<div class="card">' + '<img src="images/pizzaImg.png"/>' + menu_list_array[i] + '</div>'
+        htmldata= htmldata+ '<div class="card">' + '<img src="https://image.freepik.com/free-photo/mixed-ingredient-pizza-with-cheese-tomatoes_114579-3585.jpg"/>' + menu_list_array[i] + '</div>'
     }
     htmldata= htmldata+ "</section>"
     document.getElementById("display_addedmenu").innerHTML = htmldata;
