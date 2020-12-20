@@ -1,51 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Pizzaria</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript"> </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-<script src="main.js"></script>
+    <style>
+        body{
+    background-image: url("https://i.postimg.cc/KzWwHPcq/racing.gif");
+    background-position: center;
+    background-size: cover;
+}
+h1,
+        h4 {
+            color: white !important;
+        }
+        #myCanvas {
+            margin-top: 30px;
+            border-width: 10px;
+            border-style: ridge;
+        }
+    </style>
+    <title>Car racing game</title>
 </head>
 
-<body>
-            <div class="topnav">
-                <a class="active" href="#">Pizzaria</a>
-                <div class="topnav-right">
-                 <a href="#viewblock">View Menu</a>
-                 <a href="#addTopings">Add Menu</a>
-                </div>
-            </div>
-    
-            </div>
-        <section id="View_menu">
-        <div class="menu_div">
-            <button id="menu_list" onclick="getmenu()">Show Menu</button>
-        <div id="display_menu"></div>
-        </div>
-        </section>
-        <section id="Add_menu">
-            <div class="row" id="viewblock">
-                <div  class="img_div"> 
-                    <img class="img-responsive"  src="https://image.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg">
-                </div>
-            </div>
-                <div class="newRow" id="addTopings">
-                    <div class="block1">
-                        <input id="add_item" placeholder="Type here to add toppings?"/></br>
-                        <button id="add_toppings" onclick="add_item()" >Recommend a new Pizza</button>
-                    </div>
-                    
-                </div>
-                <img class="img-responsive" id="b" src="https://img3.exportersindia.com/product_images/bc-full/dir_43/1268258/vegetables-1478594926-2535966.jpeg">
-            </div>
-            <div class="block2">
-            <div id="display_addedmenu">
-                </div>
-            </div>
-        </section>
-   </body>
+<body onload="add();">
+    <center>
+        <h1>Car racing game</h1>
+        <h1> Game Status: <span id="game_status"></span></h1>
+         <canvas id="myCanvas" width="800" height="600"> </canvas>
+        <h4> 
+            <class="text-danger"><b> NOTE : </b> IF THE CARS ARE NOT VISIABLE PRESS ANY ARROW KEY
+         </h4>
+    </center>
+    <script src="main.js"> </script>
+</body>
+
 </html>
