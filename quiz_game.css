@@ -1,0 +1,43 @@
+body
+{
+	background-image:url(https://previews.123rf.com/images/slanapotam/slanapotam1803/slanapotam180300094/98030207-mathematics-background-different-numbers-in-random-pattern-colorful-school-pattern-for-children-mult.jpg);
+}
+
+	.login_div1 , .login_div2
+	{
+		background: linear-gradient(#4FC3F7, #FFFF8D, #FFA000, #E91E63);
+		padding: 10px;
+		float: none;
+		border-radius: 15px;
+	}
+
+
+#player1_name , #player2_name
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+#word
+{
+	width: 60%;
+}
+#word_display
+{
+	letter-spacing: 5px;
+}
+#output
+{
+background: white;
+border-radius: 10px;
+border-top: 10px solid #AA4465;
+padding: 10px;
+float: none;
+text-align: left;
+}
+h1{
+	color: rebeccapurple;
+	background: linear-gradient(#f06292 0%, #b39ddb 100%);
+}
+h3{
+	color:darkblue;
+}
