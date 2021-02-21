@@ -1,43 +1,20 @@
 body
 {
-	background-image:url(https://wallsheaven.com/photos/C354129689/220/mathematical-symbols-seamless-pattern-background,-vector-illustration.webp);
+  color: palevioletred;
+  background: lightblue;
 }
-
-	.login_div1 , .login_div2
-	{
-		background: linear-gradient(#4FC3F7, #FFFF8D, #FFA000, #E91E63);
-		padding: 10px;
-		float: none;
-		border-radius: 15px;
-	}
-
-
-#player1_name , #player2_name
+.heading
 {
-	display: inline-block;
-	margin-left: 20px;
+  width: 80%;
+  font-size: 22px;
 }
-#word
+#camera 
 {
-	width: 60%;
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
 }
-#word_display
+.name_of_objects, #result_object_name  , #result_object_accuracy
 {
-	letter-spacing: 5px;
-}
-#output
-{
-background: white;
-border-radius: 10px;
-border-top: 10px solid #AA4465;
-padding: 10px;
-float: none;
-text-align: left;
-}
-h1{
-	color: rebeccapurple;
-	background: linear-gradient(#f06292 0%, #b39ddb 100%);
-}
-h3{
-	color: coral;
+  color: yellow;
 }
