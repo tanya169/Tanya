@@ -1,20 +1,41 @@
 body
 {
-  color: palevioletred;
-  background: lightblue;
+  color: white;
+  background: #f37209;
 }
-.heading
+span
 {
-  width: 80%;
-  font-size: 22px;
+  font-size: 30px;
 }
-#camera 
+#camera , #result
 {
   border: 2px dashed black;
   width: 350px;
   height: 300px; 
 }
-.name_of_objects, #result_object_name  , #result_object_accuracy
+#result_emotion_name ,#result_emotion_name2  
 {
-  color: yellow;
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+.heading
+{
+  font-size: 18px;
+  border-radius: 10px;
+  letter-spacing: 10px;
+}
+label
+{
+  font-size: 14px;
+  color: blueviolet;
+  padding: 6px;
+  border-radius: 10px;
+  background-color: white;
 }
