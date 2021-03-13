@@ -1,68 +1,178 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>GESTURE WEB APP</title>
+<head>
+	<title>CASE STUDY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
+</head>
+<body>
 
-  <body>
-  <div class="container">
-  
-    <center>
-      <h3 class="btn btn-info heading">GESTURE WEB APP
-      <br>
-      <span>&#9994;</span>
-      <span>&#9995;</span>
-      <span>&#9757;</span>
-      <span>&#9997;</span>
-      <span>&#128406;</span>
-      <span>&#129304;</span>
-      <span>&#128079;</span>
-      <span>&#128080;</span>
-      </h3>
+<div class="container">
+	<h4>CASE STUDY
+	<img src="https://www.ideamachinestudio.com/hs-fs/hubfs/case-studies-banner-4.gif?width=1300&name=case-studies-banner-4.gif" style="width: 200px;"></h4>
+	<hr>
+	<ol>
+		<div class="text_images_and_result">
+			<li>
+				<b>Test Image - </b><img src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/202984001" class="img-responsive">
+			</li>
+			<h5>Output on <b>Microsoft Azure</b> -
+				<span></span>  
+			</h5>
+			<h5>Output on <b>Mobilenet Model </b> -
+				<span></span>  
+			</h5>
 
-      <br><br>
+			<div class="mini_result">
+				<h4>Result - </h4>
+				<hr>
+				<h4></h4>
+			</div>
 
-      <p style="font-size: 22px;">Take a selfie of a gesture to know about it's meaning
-      	<br>
-        <b>On the following gestures the model is trained - </b>
-        <br>
-        <b> ✊ | ✋ | 👍 | ✌ | 👌 </b>
-        <br>
-      </p>
+		</div>
+		<hr>
+		
+		<div class="text_images_and_result">
+			<li>
+				<b>Test Image - </b><img src="https://causewines.com/wp-content/uploads/2019/06/giraffe.jpg" class="img-responsive">
+			</li>
+			<h5>Output on <b>Microsoft Azure</b> -
+				<span></span>  
+			</h5>
+			<h5>Output on <b>Mobilenet Model </b> -
+				<span></span>  
+			</h5>
 
-      <div class="col-md-4 col-sm-12 col-xs-12">
-	      <label>Webcam View - </label>
-	      <div id="camera"></div>
-	      <br><br>
-	      <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
-      </div>
+			<div class="mini_result">
+				<h4>Result - </h4>
+				<hr>
+				<h4></h4>
+			</div>
 
-      <div class="col-md-4 col-sm-12 col-xs-12">
-	      <label>Prediction - </label>
-	      <p class="emotion_name" id="result_emotion_name"></p>
-	      <p class="emoji" id="update_emoji"></p>
-  	  </div>
+		</div>
+		
+		<hr>
 
-      <div class="col-md-4 col-sm-12 col-xs-12">
-	      <label>Snapshot - </label>
-	      <div id="result"></div>
-	      <br><br>
-	      <button onclick="check();" class="btn btn-success">Predict Emotion</button>
-	     </div>
+		<div class="text_images_and_result">
+			<li>
+				<b>Test Image - </b><img src="https://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/f/5/42751755-1-f.jpg" class="img-responsive">
+			</li>
+			<h5>Output on <b>Microsoft Azure</b> -
+				<span></span>  
+			</h5>
+			<h5>Output on <b>Mobilenet Model </b> -
+				<span></span>  
+			</h5>
 
-    </center>
+			<div class="mini_result">
+				<h4>Result - </h4>
+				<hr>
+				<h4></h4>
+			</div>
 
-  </div>
+		</div>
 
-<script src="main.js"></script>
+		<hr>
+		<div class="text_images_and_result">
+			<li>
+				<b>Test Image - </b><img src="https://cdn.shopify.com/s/files/1/0191/2234/products/DSC_3057-Grey_2048x.jpg?v=1598455884" class="img-responsive">
+			</li>
+			<h5>Output on <b>Microsoft Azure</b> -
+				<span></span>  
+			</h5>
+			<h5>Output on <b>Mobilenet Model </b> -
+				<span></span>  
+			</h5>
 
-  </body>
+			<div class="mini_result">
+				<h4>Result - </h4>
+				<hr>
+				<h4></h4>
+			</div>
+
+		</div>
+
+		<hr>
+		<div class="text_images_and_result">
+			<li>
+				<b>Test Image - </b><img src="https://images-na.ssl-images-amazon.com/images/I/81%2Bd6eSA0eL._UL1500_.jpg" class="img-responsive">
+			</li>
+			<h5>Output on <b>Microsoft Azure</b> -
+				<span></span>  
+			</h5>
+			<h5>Output on <b>Mobilenet Model </b> -
+				<span></span>  
+			</h5>
+
+			<hr>
+		<div class="text_images_and_result">
+			<li>
+				<b>Test Image - </b><img src="https://assets.wsimgs.com/wsimgs/ab/images/dp/wcm/202047/0015/img35c.jpg" class="img-responsive">
+			</li>
+			<h5>Output on <b>Microsoft Azure</b> -
+				<span></span>  
+			</h5>
+			<h5>Output on <b>Mobilenet Model </b> -
+				<span></span>  
+			</h5>
+
+			<hr>
+		<div class="text_images_and_result">
+			<li>
+				<b>Test Image - </b><img src="https://spy.com/wp-content/uploads/2019/12/featured-christmas-trees.jpg?w=650" class="img-responsive">
+			</li>
+			<h5>Output on <b>Microsoft Azure</b> -
+				<span></span>  
+			</h5>
+			<h5>Output on <b>Mobilenet Model </b> -
+				<span></span>  
+			</h5>
+
+			<hr>
+		<div class="text_images_and_result">
+			<li>
+				<b>Test Image - </b><img src="https://images-na.ssl-images-amazon.com/images/I/61IkrxQ9p8L._AC_SL1500_.jpg" class="img-responsive">
+			</li>
+			<h5>Output on <b>Microsoft Azure</b> -
+				<span></span>  
+			</h5>
+			<h5>Output on <b>Mobilenet Model </b> -
+				<span></span>  
+			</h5>
+
+			<hr>
+		<div class="text_images_and_result">
+			<li>
+				<b>Test Image - </b><img src="https://images.squarespace-cdn.com/content/v1/5511fc7ce4b0a3782aa9418b/1588887527502-EUAJ8CQ71S5QDM5M4XZN/ke17ZwdGBToddI8pDm48kDX7IDFz-Obw1pw4wJ782kcUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKccyOedkLA03PAD8PGR5dO2s_IgdVgUSeIHjlMw_GOlYUMcaVMDljFgsomjv4UEFDd/how-to-buy-colored-pencils.jpg" class="img-responsive">
+			</li>
+			<h5>Output on <b>Microsoft Azure</b> -
+				<span></span>  
+			</h5>
+			<h5>Output on <b>Mobilenet Model </b> -
+				<span></span>  
+			</h5>
+
+			<hr>
+		<div class="text_images_and_result">
+			<li>
+				<b>Test Image - </b><img src="https://www.ulcdn.net/images/products/284266/slide/1998x1089/Vermont_Bed_Box_Bed_King_1.jpg?1568794506" class="img-responsive">
+			</li>
+			<h5>Output on <b>Microsoft Azure</b> -
+				<span></span>  
+			</h5>
+			<h5>Output on <b>Mobilenet Model </b> -
+				<span></span>  
+			</h5>
+
+	</ol>
+<br>
+    <div class="copy_right_footer">
+      Developed by - WhitehatJr Team
+    </div>
+
+</body>
 </html>
