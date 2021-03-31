@@ -1,229 +1,36 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-	<title>CASE STUDY</title>
+  <meta charset="UTF-8">
+  <title>Intro p5.js</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <style type="text/css">
+  h3
+  {
+    font-size: 25px !important;
+  }
+  canvas {
+  	border:1px solid #ffbc03;
+  }
+  </style>
 </head>
+
 <body>
-
 <div class="container">
-	<h4>CASE STUDY
-	<img src="https://www.ideamachinestudio.com/hs-fs/hubfs/case-studies-banner-4.gif?width=1300&name=case-studies-banner-4.gif" style="width: 200px;"></h4>
-	<hr>
-	<ol>
-		<div class="text_images_and_result">
-			<li>
-				<b>Test Image - </b><img src="https://pyxis.nymag.com/v1/imgs/656/671/77c9d694d2cde0b2b3224b88f18d778f10-02-painted-bunting-bird.2x.rsocial.w600.jpg" class="img-responsive">
-			</li>
-			<h5>Output on <b>Microsoft Azure</b> -
-				<span>Bird</span>  
-			</h5>
-			<h5>Output on <b>Mobilenet Model </b> -
-				<span>Lorikeet</span>  
-			</h5>
-
-			<div class="mini_result">
-				<h4>Result - </h4>
-				<hr>
-				<h4>Mobilenet Model Is More Accurate</h4>
-			</div>
-
-		</div>
-		<hr>
-		
-		<div class="text_images_and_result">
-			<li>
-				<b>Test Image - </b><img src="https://causewines.com/wp-content/uploads/2019/06/giraffe.jpg" class="img-responsive">
-			</li>
-			<h5>Output on <b>Microsoft Azure</b> -
-				<span>Giraffe</span>  
-			</h5>
-			<h5>Output on <b>Mobilenet Model </b> -
-				<span>Fly</span>  
-			</h5>
-
-			<div class="mini_result">
-				<h4>Result - </h4>
-				<hr>
-				<h4>Microsoft Azure Is More Accurate</h4>
-			</div>
-
-		</div>
-		
-		<hr>
-
-		<div class="text_images_and_result">
-			<li>
-				<b>Test Image - </b><img src="https://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/f/5/42751755-1-f.jpg" class="img-responsive">
-			</li>
-			<h5>Output on <b>Microsoft Azure</b> -
-				<span>Lamp</span>  
-			</h5>
-			<h5>Output on <b>Mobilenet Model </b> -
-				<span>Lamp shade</span>  
-			</h5>
-
-			<div class="mini_result">
-				<h4>Result - </h4>
-				<hr>
-				<h4>Mobilenet Model Is More Accurate</h4>
-			</div>
-
-		</div>
-
-		<hr>
-		<div class="text_images_and_result">
-			<li>
-				<b>Test Image - </b><img src="https://www.madaboutmidcenturymodern.com/wp-content/uploads/2019/11/sala_three_plushvelvet_zinnia_light_mobile_2_1.jpg">
-			</li>
-			<h5>Output on <b>Microsoft Azure</b> -
-				<span>Couch</span>  
-			</h5>
-			<h5>Output on <b>Mobilenet Model </b> -
-				<span>Studio couch</span>  
-			</h5>
-
-			<div class="mini_result">
-				<h4>Result - </h4>
-				<hr>
-				<h4>Mobilenet Model Is More Accurate</h4>
-			</div>
-
-		</div>
-
-		<hr>
-		<div class="text_images_and_result">
-			<li>
-				<b>Test Image - </b><img src="https://images-na.ssl-images-amazon.com/images/I/81%2Bd6eSA0eL._UL1500_.jpg" class="img-responsive">
-			</li>
-			<h5>Output on <b>Microsoft Azure</b> -
-				<span>Wall clock</span>  
-			</h5>
-			<h5>Output on <b>Mobilenet Model </b> -
-				<span>Analog clock</span>  
-			</h5>
-			<div class="mini_result">
-				<h4>Result - </h4>
-				<hr>
-				<h4>Mobilenet Model Is More Accurate</h4>
-			</div>
-
-		</div>
-
-			<hr>
-		<div class="text_images_and_result">
-			<li>
-				<b>Test Image - </b><img src="https://assets.wsimgs.com/wsimgs/ab/images/dp/wcm/202047/0015/img35c.jpg" class="img-responsive">
-			</li>
-			<h5>Output on <b>Microsoft Azure</b> -
-				<span>Saucer</span>  
-			</h5>
-			<h5>Output on <b>Mobilenet Model </b> -
-				<span>Cup</span>  
-			</h5>
-			<div class="mini_result">
-				<h4>Result - </h4>
-				<hr>
-				<h4>Mobilenet Model Is More Accurate</h4>
-			</div>
-
-		</div>
-
-			<hr>
-		<div class="text_images_and_result">
-			<li>
-				<b>Test Image - </b><img src="https://www.thespruce.com/thmb/HcOE98Uo1_oXGsEaTNmsM3KffQA=/1565x1565/smart/filters:no_upscale()/ChristmasTree-5ba295ecc9e77c00503fc3a4.jpg" class="img-responsive">
-			</li>
-			<h5>Output on <b>Microsoft Azure</b> -
-				<span>Christmas tree</span>  
-			</h5>
-			<h5>Output on <b>Mobilenet Model </b> -
-				<span>Tree</span>  
-			</h5>
-			<div class="mini_result">
-				<h4>Result - </h4>
-				<hr>
-				<h4>Microsoft Azure Is More Accurate</h4>
-			</div>
-
-		</div>
-
-			<hr>
-		<div class="text_images_and_result">
-			<li>
-				<b>Test Image - </b><img src="https://images-na.ssl-images-amazon.com/images/I/61IkrxQ9p8L._AC_SL1500_.jpg" class="img-responsive">
-			</li>
-			<h5>Output on <b>Microsoft Azure</b> -
-				<span>Sports ball</span>  
-			</h5>
-			<h5>Output on <b>Mobilenet Model </b> -
-				<span>Soccer ball</span>  
-			</h5>
-			<div class="mini_result">
-				<h4>Result - </h4>
-				<hr>
-				<h4>Mobilenet Model Is More Accurate</h4>
-			</div>
-
-		</div>
-
-			<hr>
-		<div class="text_images_and_result">
-			<li>
-				<b>Test Image - </b><img src="https://www.nicepng.com/png/detail/34-349754_silicone-mixing-spoon-plastic-mixing-spoon.png" class="img-responsive">
-			</li>
-			<h5>Output on <b>Microsoft Azure</b> -
-				<span>Spoon</span>  
-			</h5>
-			<h5>Output on <b>Mobilenet Model </b> -
-				<span>Spatula</span>  
-			</h5>
-			<div class="mini_result">
-				<h4>Result - </h4>
-				<hr>
-				<h4>Mobilenet Model Is More Accurate</h4>
-			</div>
-
-		</div>
-
-			<hr>
-		<div class="text_images_and_result">
-			<li>
-				<b>Test Image - </b><img src="http://storage.sg.content-cdn.io/cdn-cgi/image/%7Bwidth%7D,%7Bheight%7D,quality=75,format=auto/in-resources/407e79ae-b096-4e8d-8e8f-44f6fc5ec664/Images/ProductImages/Source/swaind/HFBLBSCT00BU74557M%20(1).jpg" class="img-responsive">
-			</li>
-			<h5>Output on <b>Microsoft Azure</b> -
-				<span>Bed</span>  
-			</h5>
-			<h5>Output on <b>Mobilenet Model </b> -
-				<span>Desktop computer</span>  
-			</h5>
-			<div class="mini_result">
-				<h4>Result - </h4>
-				<hr>
-				<h4>Microsoft Azure Is More Accurate</h4>
-			</div>
-
-		</div>
-
-	</ol>
-	<br><br>
-	<h4 style="box-shadow: 5px 5px 18px grey;letter-spacing: 2px;background: lightskyblue;border-radius: 20px;padding: 20px;border:2px solid grey">
-	I have tested 10 images<br>
-	 <b>Mobilenet</b> have predicted 7 of them correctly. And <b>Microsoft Azure</b> have predicted 3 of them correctly. <br>
-	 So according to my  case study <b>Mobilenet</b> is more Accurate.</h4>
+	<h3 class="btn btn-primary">Introduction to p5.js</h3>
+  <br><br>
+  <button onclick="take_snapshot()" class="btn btn-success">Take Snapshot</button>
 </div>
-<br>
-<br>
-<br>
-<br>
-    <div class="copy_right_footer">
-      Developed by - Tanya Alagar
-    </div>
 
+<script src="main.js"></script>
 </body>
+
 </html>
+
+
