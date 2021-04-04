@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Realtime Filter  Webapp using PoseNet Neural Network</title>
+  <title>Realtime Image Identification</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -14,16 +14,42 @@
 
 </head>
 
-<body background="https://i.pinimg.com/originals/fb/b1/83/fbb18329435d4cc7e130bb478ed70b4f.jpg">
+<body background="https://img.freepik.com/free-photo/composition-family-concept-blue-background_23-2148485779.jpg?size=626&ext=jpg&ga=GA1.2.1356500412.1617062400">
 <center>
-  <h3 class="btn btn-info">Realtime Filter</h3>
-  <hr>
-  <button onclick="take_snapshot()" class="btn btn-success">Take Snapshot</button>
+  <h3>Realtime Image Identification
+    <hr>
+    <center>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+        Model is trained on 
+        <br>
+          <div class="btn btn-warning heading_div2">
+          Father | Mother | Cousin | Me(Tanya Alagar)
+          </div>
+        </div>
+    </center>
+    <br>
+  </h3>
+  <br><br>
+  
+  <p class="btn btn-warning result_para_tag">Person : 
+    <span id="result_person_name"></span> 
+  </p>
+  
+  <br><br>
+  <p class="btn btn-warning result_para_tag">Accuracy : 
+    <span id="result_person_accuracy"></span> 
+  </p>
+
 </center>
+<div class="copy_right_footer">
+  Developed by - Tanya Alagar
+</div>
 
 <script src="main.js"></script>
 </body>
 
 </html>
+
+
 
 
