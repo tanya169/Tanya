@@ -1,45 +1,70 @@
-.heading
-  {
-    font-size: 23px;
-    width: 100%;
-    margin: 0px;
-    box-shadow:5px 5px 5px rebeccapurple;
-  }
-  .heading_div
-  {
-    float: none ; 
-    background: white ; 
-    padding: 10px; 
-    border-radius: 20px; 
-    color: black;
-    box-shadow:5px 5px 5px rebeccapurple;
-  }
-  .heading_div2
-  {
-    font-size: 18px ;
-  }
-  .result_para_tag
-  {
-    box-shadow:5px 5px 5px royalblue;
-    font-size: 20px;
-  }
-  .copy_right_footer {
+body{
+    background-color: rgb(200, 164, 236);
+}
+.copy_right_footer {
     position: fixed;
     color: white;
     bottom: 0;
     width: 100%;
-    background-color: royalblue;
+    background-color: lightpink;
     line-height: 3;
     text-align: center;
+      font-family: 'Special Elite', cursive;
+ 
  }
-  canvas 
-  {
-    border:5px solid white;
-    border-radius:20px;
-    box-shadow:5px 5px 5px rebeccapurple;
-    margin-top: 150px; 
-  }
-  h3
-  {
-    background-color: salmon;
-  }
+ 
+ span
+ {
+     color: green;
+     font-size: 16px;
+ }	
+ li img
+ {
+     width: 200px;
+     border-radius: 20px;
+ }
+
+ ol h5
+ {
+     background: lightskyblue;
+     padding: 13px;
+     border-radius: 20px;
+ }
+ span
+ {
+     color: royalblue;
+     font-size: 16px;
+ }	
+ li img
+ {
+     border-radius: 20px;
+ }
+ .test_image_and_result
+ {
+     background: grey;
+     padding: 30px;
+     border-radius: 20px;
+     margin-top: 50px;
+     box-shadow: 5px 5px 18px grey;
+ }
+ b
+ {
+     color: hotpink;
+ }
+ 
+ .test_image_and_result
+ {
+     text-align: center;
+     color: white;
+ }
+ .mini_result
+ {
+     box-shadow: 5px 5px 18px grey;
+     letter-spacing: 2px;
+     background: #F2BAC9;
+     border-radius: 20px;
+     margin-top:30px;
+     padding: 20px;
+     border:2px solid grey
+ }
+ 

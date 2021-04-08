@@ -1,55 +1,272 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-  <title>Realtime Image Identification</title>
+	<title>CASE STUDY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<body>
 
-<body background="https://img.freepik.com/free-photo/composition-family-concept-blue-background_23-2148485779.jpg?size=626&ext=jpg&ga=GA1.2.1356500412.1617062400">
-<center>
-  <h3>Realtime Image Identification
-    <hr>
-    <center>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
-        Model is trained on 
-        <br>
-          <div class="btn btn-warning heading_div2">
-          Father | Mother | Cousin | Me(Tanya Alagar)
-          </div>
-        </div>
-    </center>
-    <br>
-  </h3>
-  <br><br>
-  
-  <p class="btn btn-warning result_para_tag">Person : 
-    <span id="result_person_name"></span> 
-  </p>
-  
-  <br><br>
-  <p class="btn btn-warning result_para_tag">Accuracy : 
-    <span id="result_person_accuracy"></span> 
-  </p>
+	<div class="container">
+		<h4>
+		<span >CASE STUDY BETWEEN GOOGLE LENS AND MOBILNET </span>
+		<br><br>
+		GOOGEL LENS 
+		<img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Google_Lens_-_new_logo.png" style="width: 50px;">
+		<p>
+			<b style="color: orange;">VS</b>
+		</p>
+		<br>
+		<p class="btn btn-primary">Mobilenet </p>
+		</h4>
+	
+		<hr>
+		<ol>
+			<div class="test_image_and_result col-xs-12">
+	
+				<li class="col-sm-4 col-xs-12">
+					<b style="color: white;">Test Image - </b>
+					<img src="https://m.media-amazon.com/images/I/612sTs2WCCL._AC_UL320_.jpg" class="img-responsive">
+				</li>
+				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
+					<span>Table clock</span>  
+				</h5>
+				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
+					<span></span>  
+				</h5>
+	
+				<div class="mini_result" class="col-xs-12">
+					<h4>Result - </h4>
+					<hr>
+					<h4></h4>
+				</div>
+	
+			</div>
+			<br>
+	
+			<div class="test_image_and_result col-xs-12">
+	
+				<li class="col-sm-4 col-xs-12">
+					<b style="color: white;">Test Image - </b>
+					<img src="https://images-na.ssl-images-amazon.com/images/I/61eoV%2B4Nj%2BL._AC_SX522_.jpg" class="img-responsive">
+				</li>
+				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
+					<span>Ceramic kettle</span>  
+				</h5>
+				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
+					<span></span>  
+				</h5>
+	
+				<div class="mini_result" class="col-xs-12">
+					<h4>Result - </h4>
+					<hr>
+					<h4></h4>
+				</div>
+	
+			</div>
+					
+			<br>
+	
+			<div class="test_image_and_result col-xs-12">
+	
+				<li class="col-sm-4 col-xs-12">
+					<b style="color: white;">Test Image - </b>
+					<img src="https://assets.awaytravel.com/spree/products/4024/original/Blush_CO_PDP_002.jpg" class="img-responsive">
+				</li>
+				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
+					<span>Travel suitcase</span>  
+				</h5>
+				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
+					<span></span>  
+				</h5>
+	
+				<div class="mini_result" class="col-xs-12">
+					<h4>Result - </h4>
+					<hr>
+					<h4></h4>
+				</div>
+	
+			</div>
+					
+			<br>
+	
+			<div class="test_image_and_result col-xs-12">
+	
+				<li class="col-sm-4 col-xs-12">
+					<b style="color: white;">Test Image - </b>
+					<img src="https://www.lordsindia.com/image/cache/1/UMBRELLA/Rainbow%20Umbrella%202-1700x1700_0-1700x1700.jpg" class="img-responsive">
+				</li>
+				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
+					<span>Rainbow umbrella</span>  
+				</h5>
+				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
+					<span></span>  
+				</h5>
+	
+				<div class="mini_result" class="col-xs-12">
+					<h4>Result - </h4>
+					<hr>
+					<h4></h4>
+				</div>
+	
+			</div>
+					
+			<br>
+	
+			<div class="test_image_and_result col-xs-12">
+	
+				<li class="col-sm-4 col-xs-12">
+					<b style="color: white;">Test Image - </b>
+					<img src="https://static.scientificamerican.com/sciam/cache/file/ACF0A7DC-14E3-4263-93F438F6DA8CE98A_source.jpg" class="img-responsive">
+				</li>
+				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
+					<span>Giant panda</span>  
+				</h5>
+				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
+					<span></span>  
+				</h5>
+	
+				<div class="mini_result" class="col-xs-12">
+					<h4>Result - </h4>
+					<hr>
+					<h4></h4>
+				</div>
+	
+			</div>
+					
+			<br>
 
-</center>
-<div class="copy_right_footer">
-  Developed by - Tanya Alagar
-</div>
+			<div class="test_image_and_result col-xs-12">
+	
+				<li class="col-sm-4 col-xs-12">
+					<b style="color: white;">Test Image - </b>
+					<img src="https://miro.medium.com/max/640/1*PT8H-8Kv6mkeA-eafGdhag.jpeg" class="img-responsive">
+				</li>
+				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
+					<span>Indian rhinoceros</span>  
+				</h5>
+				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
+					<span></span>  
+				</h5>
+	
+				<div class="mini_result" class="col-xs-12">
+					<h4>Result - </h4>
+					<hr>
+					<h4></h4>
+				</div>
+	
+			</div>
+					
+			<br>
 
-<script src="main.js"></script>
-</body>
+			<br>
 
-</html>
+			<div class="test_image_and_result col-xs-12">
+	
+				<li class="col-sm-4 col-xs-12">
+					<b style="color: white;">Test Image - </b>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/5/50/RedPandaFullBody.JPG" class="img-responsive">
+				</li>
+				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
+					<span>Red panda</span>  
+				</h5>
+				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
+					<span></span>  
+				</h5>
+	
+				<div class="mini_result" class="col-xs-12">
+					<h4>Result - </h4>
+					<hr>
+					<h4></h4>
+				</div>
+	
+			</div>
 
+			
+			<br>
 
+			<div class="test_image_and_result col-xs-12">
+	
+				<li class="col-sm-4 col-xs-12">
+					<b style="color: white;">Test Image - </b>
+					<img src="https://ii1.pepperfry.com/media/catalog/product/c/e/568x625/ceramic-white-flower-vase-by-aapno-rajasthan-ceramic-white-flower-vase-by-aapno-rajasthan-fxw0sq.jpg" class="img-responsive">
+				</li>
+				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
+					<span>Ceramic vase</span>  
+				</h5>
+				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
+					<span></span>  
+				</h5>
+	
+				<div class="mini_result" class="col-xs-12">
+					<h4>Result - </h4>
+					<hr>
+					<h4></h4>
+				</div>
+	
+			</div>
+			<br>
 
+			
+			<br>
 
+			<div class="test_image_and_result col-xs-12">
+	
+				<li class="col-sm-4 col-xs-12">
+					<b style="color: white;">Test Image - </b>
+					<img src="https://i.pinimg.com/originals/94/04/78/9404780ed0ff83e786e82c1e3f52725e.png" class="img-responsive">
+				</li>
+				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
+					<span>Cruiser bicycle</span>  
+				</h5>
+				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
+					<span></span>  
+				</h5>
+	
+				<div class="mini_result" class="col-xs-12">
+					<h4>Result - </h4>
+					<hr>
+					<h4></h4>
+				</div>
+	
+			</div>
+
+			<br>
+
+			<div class="test_image_and_result col-xs-12">
+	
+				<li class="col-sm-4 col-xs-12">
+					<b style="color: white;">Test Image - </b>
+					<img src="https://www.collinsdictionary.com/images/full/toothbrush_121250959_1000.jpg" class="img-responsive">
+				</li>
+				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
+					<span>Toothbrush</span>  
+				</h5>
+				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
+					<span></span>  
+				</h5>
+	
+				<div class="mini_result" class="col-xs-12">
+					<h4>Result - </h4>
+					<hr>
+					<h4></h4>
+				</div>
+	
+			</div>
+		</ol>
+	<br><br>
+		<h4 class="test_image_and_result col-xs-12 result">
+	<br>
+		</h4>
+	</div>
+	<br><br>
+	
+		<div class="copy_right_footer">
+		  Developed by - Tanya Alagar
+		</div>
+	</body>
+	</html>
