@@ -1,278 +1,36 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-	<title>CASE STUDY</title>
+  <title>Realtime Drawing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
 
-	<div class="container">
-		<h4>
-		<span><h1>CASE STUDY BETWEEN GOOGLE LENS AND MOBILENET</h1> </span>
-		<br><br>
-		GOOGLE LENS 
-		<img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Google_Lens_-_new_logo.png" style="width: 50px;">
-		<p>
-			<b style="color: gold;">VS</b>
-		</p>
-		<br>
-		<p class="btn btn-primary">Mobilenet </p>
-		</h4>
-	
-		<hr>
-		<ol>
-			<div class="test_image_and_result col-xs-12">
-	
-				<li class="col-sm-4 col-xs-12">
-					<b style="color: white;">Test Image - </b>
-					<img src="https://m.media-amazon.com/images/I/612sTs2WCCL._AC_UL320_.jpg" class="img-responsive">
-				</li>
-				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
-					<span>Table clock</span>  
-				</h5>
-				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
-					<span>Wall clock</span>  
-				</h5>
-	
-				<div class="mini_result" class="col-xs-12">
-					<h4>Result - </h4>
-					<hr>
-					<h4>MOBILENET Is More Accurate.</h4>
-				</div>
-	
-			</div>
-			<br>
-	
-			<div class="test_image_and_result col-xs-12">
-	
-				<li class="col-sm-4 col-xs-12">
-					<b style="color: white;">Test Image - </b>
-					<img src="https://images-na.ssl-images-amazon.com/images/I/61eoV%2B4Nj%2BL._AC_SX522_.jpg" class="img-responsive">
-				</li>
-				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
-					<span>Ceramic kettle</span>  
-				</h5>
-				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
-					<span>Water jug</span>  
-				</h5>
-	
-				<div class="mini_result" class="col-xs-12">
-					<h4>Result - </h4>
-					<hr>
-					<h4></h4>
-					<h4>GOOGLE LENS Is More Accurate.</h4>
-				</div>
-	
-			</div>
-					
-			<br>
-	
-			<div class="test_image_and_result col-xs-12">
-	
-				<li class="col-sm-4 col-xs-12">
-					<b style="color: white;">Test Image - </b>
-					<img src="https://assets.awaytravel.com/spree/products/4024/original/Blush_CO_PDP_002.jpg" class="img-responsive">
-				</li>
-				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
-					<span>Travel suitcase</span>  
-				</h5>
-				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
-					<span>Shovel</span>  
-				</h5>
-	
-				<div class="mini_result" class="col-xs-12">
-					<h4>Result - </h4>
-					<hr>
-					<h4>GOOGLE LENS Is More Accurate.</h4>
-				</div>
-	
-			</div>
-					
-			<br>
-	
-			<div class="test_image_and_result col-xs-12">
-	
-				<li class="col-sm-4 col-xs-12">
-					<b style="color: white;">Test Image - </b>
-					<img src="https://www.lordsindia.com/image/cache/1/UMBRELLA/Rainbow%20Umbrella%202-1700x1700_0-1700x1700.jpg" class="img-responsive">
-				</li>
-				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
-					<span>Rainbow umbrella</span>  
-				</h5>
-				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
-					<span>Umbrella</span>  
-				</h5>
-	
-				<div class="mini_result" class="col-xs-12">
-					<h4>Result - </h4>
-					<hr>
-					<h4>GOOGLE LENS Is More Accurate.</h4>
-				</div>
-	
-			</div>
-					
-			<br>
-	
-			<div class="test_image_and_result col-xs-12">
-	
-				<li class="col-sm-4 col-xs-12">
-					<b style="color: white;">Test Image - </b>
-					<img src="https://static.scientificamerican.com/sciam/cache/file/ACF0A7DC-14E3-4263-93F438F6DA8CE98A_source.jpg" class="img-responsive">
-				</li>
-				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
-					<span>Giant panda</span>  
-				</h5>
-				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
-					<span>Panda bear</span>  
-				</h5>
-	
-				<div class="mini_result" class="col-xs-12">
-					<h4>Result - </h4>
-					<hr>
-					<h4>GOOGLE LENS Is More Accurate.</h4>
-				</div>
-	
-			</div>
-					
-			<br>
+<body background="https://i.pinimg.com/736x/04/f6/42/04f642d8d98004e610641a3e48c91912.jpg">
+<center>
+  <h3 class="btn btn-danger heading">FONT MANIPULATOR
+    <br>
+    <span class="note">NOTE - Get your left and right wrist closer to eachother
+      to reduce the font size and to increase the font size 
+      keep your left and right wrist far from each other. 
+    </span>
+    <br>
+    <span id="font_size"></span>
+  </h3>
+</center>
 
-			<div class="test_image_and_result col-xs-12">
-	
-				<li class="col-sm-4 col-xs-12">
-					<b style="color: white;">Test Image - </b>
-					<img src="https://miro.medium.com/max/640/1*PT8H-8Kv6mkeA-eafGdhag.jpeg" class="img-responsive">
-				</li>
-				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
-					<span>Indian rhinoceros</span>  
-				</h5>
-				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
-					<span>Scope</span>  
-				</h5>
-	
-				<div class="mini_result" class="col-xs-12">
-					<h4>Result - </h4>
-					<hr>
-					<h4>GOOGLE LENS Is More Accurate.</h4>
-				</div>
-	
-			</div>
-					
-			<br>
+<div class="copy_right_footer">
+  Developed by - Tanya Alagar
+</div>
 
-			<br>
+<script src="main.js"></script>
 
-			<div class="test_image_and_result col-xs-12">
-	
-				<li class="col-sm-4 col-xs-12">
-					<b style="color: white;">Test Image - </b>
-					<img src="https://upload.wikimedia.org/wikipedia/commons/5/50/RedPandaFullBody.JPG" class="img-responsive">
-				</li>
-				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
-					<span>Red panda</span>  
-				</h5>
-				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
-					<span>Ping-pong ball</span>  
-				</h5>
-	
-				<div class="mini_result" class="col-xs-12">
-					<h4>Result - </h4>
-					<hr>
-					<h4>GOOGLE LENS Is More Accurate.</h4>
-				</div>
-	
-			</div>
+</html>
 
-			
-			<br>
 
-			<div class="test_image_and_result col-xs-12">
-	
-				<li class="col-sm-4 col-xs-12">
-					<b style="color: white;">Test Image - </b>
-					<img src="https://ii1.pepperfry.com/media/catalog/product/c/e/568x625/ceramic-white-flower-vase-by-aapno-rajasthan-ceramic-white-flower-vase-by-aapno-rajasthan-fxw0sq.jpg" class="img-responsive">
-				</li>
-				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
-					<span>Ceramic vase</span>  
-				</h5>
-				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
-					<span>Window shade</span>  
-				</h5>
-	
-				<div class="mini_result" class="col-xs-12">
-					<h4>Result - </h4>
-					<hr>
-					<h4>GOOGLE LENS Is More Accurate.</h4>
-				</div>
-	
-			</div>
-			<br>
-
-			
-			<br>
-
-			<div class="test_image_and_result col-xs-12">
-	
-				<li class="col-sm-4 col-xs-12">
-					<b style="color: white;">Test Image - </b>
-					<img src="https://i.pinimg.com/originals/94/04/78/9404780ed0ff83e786e82c1e3f52725e.png" class="img-responsive">
-				</li>
-				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
-					<span>Cruiser bicycle</span>  
-				</h5>
-				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
-					<span>Analog clock</span>  
-				</h5>
-	
-				<div class="mini_result" class="col-xs-12">
-					<h4>Result - </h4>
-					<hr>
-					<h4>GOOGLE LENS Is More Accurate.</h4>
-				</div>
-	
-			</div>
-
-			<br>
-
-			<div class="test_image_and_result col-xs-12">
-	
-				<li class="col-sm-4 col-xs-12">
-					<b style="color: white;">Test Image - </b>
-					<img src="https://www.collinsdictionary.com/images/full/toothbrush_121250959_1000.jpg" class="img-responsive">
-				</li>
-				<h5 class="col-sm-4 col-xs-12" >Output on <b>GOOGLE LENS</b> -
-					<span>Toothbrush</span>  
-				</h5>
-				<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> -
-					<span>Ballpoint pen</span>  
-				</h5>
-	
-				<div class="mini_result" class="col-xs-12">
-					<h4>Result - </h4>
-					<hr>
-					<h4>GOOGLE LENS Is More Accurate.</h4>
-				</div>
-
-			</div>
-					
-			<br>
-	
-	
-		</ol>
-	<br><br>
-		<h4 class="col-xs-12 result">
-		I have tested 10 images.<br>
-		 <b>GOOGLE LENS</b> has predicted 9 of them more accurately. And <b>MOBILENET</b> has predicted 1 of them more accurately.<br>
-		 So according to my case study <b>GOOGLE LENS</b> is more Accurate.</h4>
-	</div>
-	<br><br>
-	
-		<div class="copy_right_footer">
-		  Developed by - Tanya Alagar
-		</div>
-	</body>
-	</html>

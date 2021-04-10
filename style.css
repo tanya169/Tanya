@@ -1,81 +1,28 @@
-body{
-    background-color: rgb(200, 164, 236);
-}
-.copy_right_footer {
+.heading
+  {
+    font-size: 23px;
+    width: 100%;
+    margin: 0px;
+    box-shadow:5px 5px 5px grey;
+  }
+  .note
+  {
+    font-size: 15px;
+    color: rebeccapurple;
+  }
+  .copy_right_footer {
     position: fixed;
-    color: white;
+    color: brown;
     bottom: 0;
     width: 100%;
-    background-color: lightpink;
+    background-color: beige;
     line-height: 3;
     text-align: center;
-      font-family: 'Special Elite', cursive;
- 
  }
- 
- span
- {
-     color: green;
-     font-size: 16px;
- }	
- li img
- {
-     width: 200px;
-     border-radius: 20px;
- }
-
- ol h5
- {
-     background: lightskyblue;
-     padding: 13px;
-     border-radius: 20px;
- }
- span
- {
-     color: lemonchiffon;
-     font-size: 16px;
- }	
- li img
- {
-     border-radius: 20px;
- }
- .test_image_and_result
- {
-     background: grey;
-     padding: 30px;
-     border-radius: 20px;
-     margin-top: 50px;
-     box-shadow: 5px 5px 18px grey;
- }
- b
- {
-     color: hotpink;
- }
- 
- .test_image_and_result
- {
-     text-align: center;
-     color: white;
- }
- .mini_result
- {
-     box-shadow: 5px 5px 18px grey;
-     letter-spacing: 2px;
-     background: #F2BAC9;
-     border-radius: 20px;
-     margin-top:30px;
-     padding: 20px;
-     border:2px solid grey
- }
- 
- .result
- {
-     box-shadow: 5px 5px 18px grey;
-     letter-spacing: 2px;
-     background: royalblue;
-     border-radius: 20px;
-     margin-top:30px;
-     padding: 20px;
-     border:2px solid grey
- }
+  canvas 
+  {
+    border:5px solid white;
+    border-radius:20px;
+    box-shadow:10px 10px 10px grey;
+  }
  
