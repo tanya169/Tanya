@@ -16,3 +16,27 @@ leftWristX = 0;
 function modelLoaded() {
   console.log('PoseNet Is Initialized!');
 }
+
+
+function gotPoses(results)
+{
+  if(results.length > 0)
+  {
+    console.log(results);
+
+    leftWristX = results[0].pose.leftWrist.x;
+    rightWristX = results[0].pose.rightWrist.x;
+    difference = floor(leftWristX - rightWristX);
+
+    console.log("leftWristX  = " + leftWristX  + " rightWristX = "+ rightWristX + " difference = " + difference);
+  }
+}
+
+function draw() {
+background('#FF3B9D');
+
+  document.getElementById("font_size").innerHTML = "Font size of the text will be = " + difference +"px";
+textSize(difference);
+fill('#E6E6FA');
+text('Hello', 175, 350);
+}
