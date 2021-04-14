@@ -1,42 +1,55 @@
-difference = 0;
+song1 = "";
+song2 = "";
+
+song1_status = "";
+song2_status = "";
+
+scoreRightWrist = 0;
+scoreLeftWrist = 0;
+
 rightWristX = 0;
+rightWristY = 0;
+
 leftWristX = 0;
+leftWristY = 0;
 
-  function setup() {
-  video = createCapture(VIDEO);
-  video.size(550, 500);
+function preload()
+{
+	song1 = loadSound("Harry_Potter_Theme-550179.mp3");
+	song2 = loadSound("");
+}
 
-  canvas = createCanvas(550, 550);
-  canvas.position(560,150);
+function setup() {
+	canvas =  createCanvas(600, 500);
+	canvas.center();
 
-  poseNet = ml5.poseNet(video, modelLoaded);
-  poseNet.on('pose', gotPoses);
+	video = createCapture(VIDEO);
+	video.hide();
+
+	poseNet = ml5.poseNet(video, modelLoaded);
+	poseNet.on('pose', gotPoses);
 }
 
 function modelLoaded() {
-  console.log('PoseNet Is Initialized!');
+  console.log('PoseNet Is Initialized');
 }
-
 
 function gotPoses(results)
 {
   if(results.length > 0)
   {
-    console.log(results);
+	console.log(results);
+	scoreRightWrist =  results[0].pose.keypoints[10].score;
+	scoreLeftWrist =  results[0].pose.keypoints[9].score;
+	console.log("scoreRightWrist = " + scoreRightWrist + "scoreLeftWrist = " + scoreLeftWrist);
+	
+	rightWristX = results[0].pose.rightWrist.x;
+	rightWristY = results[0].pose.rightWrist.y;
+	console.log("rightWristX = " + rightWristX +" rightWristY = "+ rightWristY);
 
-    leftWristX = results[0].pose.leftWrist.x;
-    rightWristX = results[0].pose.rightWrist.x;
-    difference = floor(leftWristX - rightWristX);
-
-    console.log("leftWristX  = " + leftWristX  + " rightWristX = "+ rightWristX + " difference = " + difference);
+	leftWristX = results[0].pose.leftWrist.x;
+	leftWristY = results[0].pose.leftWrist.y;
+	console.log("leftWristX = " + leftWristX +" leftWristY = "+ leftWristY);
+		
   }
-}
-
-function draw() {
-background('#FF3B9D');
-
-  document.getElementById("font_size").innerHTML = "Font size of the text will be = " + difference +"px";
-textSize(difference);
-fill('#E6E6FA');
-text('Hello', 175, 350);
 }
