@@ -1,99 +1,59 @@
-song1 = "";
-song2 = "";
+img = "";
+objects = [];
+status = "";
+alarm = "";
 
-song1_status = "";
-song2_status = "";
-
-scoreRightWrist = 0;
-scoreLeftWrist = 0;
-
-rightWristX = 0;
-rightWristY = 0;
-
-leftWristX = 0;
-leftWristY = 0;
-
-function preload()
-{
-	song1 = loadSound("music.mp3");
-	song2 = loadSound("music2.mp3");
+function preload(){
+  alarm = loadSound("music.mp3");
 }
 
+
 function setup() {
-	canvas =  createCanvas(600, 500);
-	canvas.center();
-
-	video = createCapture(VIDEO);
-	video.hide();
-
-	poseNet = ml5.poseNet(video, modelLoaded);
-	poseNet.on('pose', gotPoses);
+  canvas = createCanvas(380, 380);
+  canvas.center();
+  video = createCapture(VIDEO);
+  video.size(380,380);
+  video.hide();
+  objectDetector = ml5.objectDetector('cocossd', modelLoaded);
+  document.getElementById("status").innerHTML = "Status : Detecting Person";
 }
 
 function modelLoaded() {
-  console.log('PoseNet Is Initialized');
+  console.log("Model Loaded!")
+  status = true;
 }
 
-function gotPoses(results)
-{
-  if(results.length > 0)
-  {
-	console.log(results);
-	scoreRightWrist =  results[0].pose.keypoints[10].score;
-	scoreLeftWrist =  results[0].pose.keypoints[9].score;
-	console.log("scoreRightWrist = " + scoreRightWrist + "scoreLeftWrist = " + scoreLeftWrist);
-	
-	rightWristX = results[0].pose.rightWrist.x;
-	rightWristY = results[0].pose.rightWrist.y;
-	console.log("rightWristX = " + rightWristX +" rightWristY = "+ rightWristY);
-
-	leftWristX = results[0].pose.leftWrist.x;
-	leftWristY = results[0].pose.leftWrist.y;
-	console.log("leftWristX = " + leftWristX +" leftWristY = "+ leftWristY);
-		
+function gotResult(error, results) {
+  if (error) {
+    console.log(error);
   }
+  console.log(results);
+  objects = results;
 }
+
 
 function draw() {
-	image(video, 0, 0, 600, 500);
-	
-	song1_status = song1.isPlaying();
-	song2_status = song2.isPlaying();
-
-	fill("#ADD8E6");
-	stroke("#FF5070");
-
-	if(scoreRightWrist > 0.2)
-	{ 
-		circle(rightWristX,rightWristY,20);
-
-			song2.stop();
-
-		if(song1_status == false)
-		{
-			song1.play();
-			document.getElementById("song").innerHTML = "Playing - Harry Potter Theme Song"
-		}
-	}
-
-	if(scoreLeftWrist > 0.2)
-	{
-		circle(leftWristX,leftWristY,20);
-
-			song1.stop();
-
-		if(song2_status == false)
-		{
-			song2.play();
-			document.getElementById("song").innerHTML = "Playing - Peter Pan Song"
-		}
-	}
-
+  image(video, 0, 0, 380, 380);
+      if(status != "")
+      {
+        r =  random(255);
+        g =  random(255);
+        b =  random(255);      
+        objectDetector.detect(video, gotResult);
+        for (i = 0; i < objects.length; i++) {
+          document.getElementById("status").innerHTML = "Status : Person Detected";
+          document.getElementById("number_of_objects").innerHTML = "Number of objects detected are : "+ objects.length;
+ 
+          fill(r,g,b);
+          percent = floor(objects[i].confidence * 100);
+          text(objects[i].label + " " + percent + "%", objects[i].x + 15, objects[i].y + 15);
+          noFill();
+          stroke(r,g,b);
+          rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
+        }
+      }
 }
 
-function play()
-{
-	song.play();
-	song.setVolume(1);
-	song.rate(1);
+function play() {
+  alarm.play();
 }
