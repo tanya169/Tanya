@@ -1,27 +1,33 @@
-body
-{
-background-position: center;
-background-size: cover;
-}
-
 .heading
 {
-font-size: 23px;
 width: 100%;
-margin: 0px;
+text-align: left;
 }
 
-#status , #number_of_objects
-{
-font-size: 18px;
+.heading button{
+    float: right;
+    border: 1px solid white;
 }
 
-canvas
+.heading h3{
+    display: inline;
+}
+
+#start ,#status
 {
-box-shadow: 5px 5px 5px lightgrey;
-border-radius: 10px;
-margin-top: 180px;
+font-size: 22px;
 }
-span {
-    color: hotpink;
+
+h4
+{
+   background-color: grey;
+   color:white;
+   line-height: 2;
 }
+
+canvas 
+  {
+      border:2px solid hotpink;
+      border-radius: 20px;
+      box-shadow:  5px 5px 5px honeydew;
+  }
