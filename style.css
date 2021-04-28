@@ -3,31 +3,43 @@
 width: 100%;
 text-align: left;
 }
+.heading h3{
+    display: inline;
+}
 
 .heading button{
     float: right;
     border: 1px solid white;
 }
 
-.heading h3{
-    display: inline;
-}
-
-#start ,#status
+#start ,#status, #restart
 {
 font-size: 22px;
 }
 
-h4
+.modal-dialog
 {
-   background-color: grey;
-   color:white;
-   line-height: 2;
+    width: 70%;
 }
-
+.modal-body
+{
+    text-align: left;
+    font-size: 20px;
+}
 canvas 
   {
-      border:2px solid hotpink;
+      border:3px solid honeydew;
       border-radius: 20px;
-      box-shadow:  5px 5px 5px honeydew;
+      box-shadow:  5px 5px 5px hotpink;
   }
+  .footer 
+  {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 2;
+    background-color: lemonchiffon;
+    color:palevioletred;
+    text-align: center;
+ }
