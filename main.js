@@ -1,4 +1,3 @@
-
 var paddle2 =10,paddle1=10;
 
 var paddle1X = 10,paddle1Height = 110;
@@ -123,14 +122,12 @@ function draw(){
 
 
 
-
 //function reset when ball does notcame in the contact of padde
 function reset(){
    ball.x = width/2+100,
    ball.y = height/2+100;
    ball.dx=3;
-   ball.dy =3;
-   
+   ball.dy =3;   
 }
 
 
@@ -172,9 +169,11 @@ function move(){
   if (ball.x-2.5*ball.r/2< 0){
   if (ball.y >= paddle1Y&& ball.y <= paddle1Y + paddle1Height) {
     ball.dx = -ball.dx+0.5; 
+    ball_touch_paddel.play();
   }
   else{
     pcscore++;
+    missed.play();
     reset();
     navigator.vibrate(100);
   }
@@ -185,9 +184,9 @@ if(pcscore ==4){
     rect(0,0,width,height-1);
     fill("white");
     stroke("white");
-    textSize(25)
-    text("Game Over!☹☹",width/2,height/2);
-    text("Reload The Page!",width/2,height/2+30)
+    textSize(25);
+    text("Game Over!",width/2,height/2);
+    text("Press Restart button to play again!",width/2,height/2+30)
     noLoop();
     pcscore = 0;
 }
@@ -215,5 +214,13 @@ function paddleInCanvas(){
   }
   if(mouseY < 0){
     mouseY =0;
-  }  
+  }
+ 
+  
+}
+
+function restart()
+{
+  pcscore = 0;
+  loop();
 }
