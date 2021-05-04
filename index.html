@@ -1,68 +1,23 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>AI PING PONG GAME</title>
- 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-     
-        <link rel="stylesheet" href="style.css">
-        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
-    </head>
-    <body background="http://cdn.lowgif.com/small/d5323f158ae03a34-.gif">
-        <center>
 
-            <div class="btn btn-success heading">
-              <h3>AI PING PONG GAME</h3>
-              <button class="btn btn-warning"  data-toggle="modal" data-target="#myModal">Instruction</button>
-            </div>
-      
-            <br><br>
-            <button class="btn btn-success" onclick="startGame()" id="start">Play Game</button>
-            <br><br>
-            <h3 id="status" class="btn btn-default"></h3>
-            <br><br>
-            <div id="canvas"></div>
-            <br><br>
-            <script src="main.js"></script>
-            <button onclick="restart()" class="btn btn-danger" id="restart">Restart</button>
-            <br><br>
-        
-            <div id="myModal" class="modal fade ">
-              <div class="modal-dialog" >
-                <div class="modal-content">
-            
-                  <div class="modal-header">
-                    <button class="close" data-dismiss="modal">&times;</button>
-                    <h3>Instructions</h3>
-                  </div>
-            
-                   <div class="modal-body">
-                       <ol>
-                           <li>First keep your laptop screen straight</li>
-                           <li>Move yourself approximately 3-4 feet away from the laptop</li>
-                           <li>Move your right wrist in an ascending and decending manner, a red dot should appear on your right wrist</li>
-                           <li>Now press the play button, and again move yourself 3-4 feet away from laptop</li>
-                           <li>The red paddle is your paddle, that will move as per the movement of your right wrist</li>
-                       </ol>
-                    </div>
-      
-                </div>
-              </div>
-            </div>
+<head>
+    <title>C80</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
 
-            <div class="footer">
-  <p>Developed By - Tanya Alagar</p>
-</div>
-
-      </center>
-
-<script src="main.js"></script>
+<body>
+    <center>
+        <h3 style="margin-top: 20px; margin-bottom: 20px; "> List of the students in my class </h3>
+        <div id="rows"> <span>1</span> <input type="text" placeholder="Name of the Student" id="name_of_the_student_1">
+            <br> <span>2</span> <input type="text" placeholder="Name of the Student" id="name_of_the_student_2"> <br>
+            <span>3</span> <input type="text" placeholder="Name of the Student" id="name_of_the_student_3"> <br>
+            <span>4</span> <input type="text" placeholder="Name of the Student" id="name_of_the_student_4"> </div>
+        <button onclick="submit()" id="submit_button"> Submit </button>
+        <div id="display_name_with_commas"> </div>
+        <hr>
+        <div id="display_name_without_commas"> </div> <button onclick="sorting()" id="sort_button"> Sort </button>
 </body>
-</html>
-        </center>
-</body>
+
 </html>
